@@ -1,0 +1,25 @@
+# ══════════════════════════════════════════════════════
+# .gitignore for SailPoint CI/CD Pipeline repo
+# ══════════════════════════════════════════════════════
+
+# SECURITY: local-test.py contains real credentials when filled in.
+# NEVER commit it to GitHub.
+local-test.py
+
+# Exported config contains tenant data — keep out of source control.
+# Jenkins passes this between stages via the workspace, not git.
+config-export.json
+
+# Backups contain full tenant config snapshots — never commit these.
+backups/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
