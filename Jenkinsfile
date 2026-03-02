@@ -22,7 +22,10 @@
 
 pipeline {
     agent any
-
+tools {
+        // This MUST match the 'Name' field in Manage Jenkins > Tools
+        jdk 'JDK25' 
+    }
     environment {
         // ── Update these three URLs to match your real SailPoint tenants ──
         SOURCE_TENANT_URL = 'https://partner5434.api.identitynow-demo.com'
