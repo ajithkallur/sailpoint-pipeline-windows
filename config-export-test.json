@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "timestamp": "2025-01-15T10:00:00Z",
+  "tenant": "poc-test",
+  "description": "POC Test Configuration - Safe to Import/Delete",
+  "objects": [
+    {
+      "version": 1,
+      "self": {
+        "type": "TRANSFORM",
+        "id": "poc-test-demo-transform",
+        "name": "POC_TEST_Demo_Transform"
+      },
+      "object": {
+        "name": "POC_TEST_Demo_Transform",
+        "type": "static",
+        "attributes": {
+          "value": "POC_TEST_VALUE"
+        },
+        "internal": false
+      }
+    }
+  ]
+}
